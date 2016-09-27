@@ -1,4 +1,4 @@
-node('remote') {
+node('master') {
     stage('fetch') {
       git url: 'https://github.com/naspersclassifieds-regional/olxsa-atlas-web-env-test'
       def v = version()
