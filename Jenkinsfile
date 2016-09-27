@@ -5,7 +5,7 @@ node('master') {
     }
     stage('composer'){
         echo 'composer update...'
-        sh 'composer self-update
+        sh 'composer self-update'
         sh 'composer update -o --no-dev'
         echo 'NPM install....'
         sh 'npm install --production'
