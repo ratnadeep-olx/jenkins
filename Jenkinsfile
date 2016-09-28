@@ -1,7 +1,7 @@
 node('master') {
     stage('fetch'){
       echo 'fetching from git'  
-      git credentialsId: '4e43c885-b63e-4c75-bfc1-818900e037e7', url: 'https://github.com/naspersclassifieds-regional/olxsa-atlas-web-env-test.git'
+      git credentialsId: 'c483942c-4cee-4d25-97a6-238273657c5f', url: 'git@github.com:naspersclassifieds-regional/olxsa-atlas-web-env-test.git'
     }
     stage('composer'){
         echo 'composer update...'
